@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhloSystemController")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c41ded7d8c99a2a488d02d04f953fa831b10763")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhloSystemController")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhloSystemController")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

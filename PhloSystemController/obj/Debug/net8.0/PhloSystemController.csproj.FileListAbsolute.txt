@@ -10,3 +10,4 @@ D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug
 D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemController.pdb
 D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\ref\PhloSystemController.dll
 D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemController.csproj.AssemblyReference.cache
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemController.sourcelink.json
