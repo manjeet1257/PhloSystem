@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhloSystemAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d603ebaed2f8251f505c6627db52e6975d5ad1e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b60013076786641328a0d712ad7edfa273b2887")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhloSystemAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhloSystemAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
