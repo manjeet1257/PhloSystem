@@ -25,8 +25,6 @@ namespace PhloSystemAPI.Controllers
         {
             var products = await _productService.GetProductsAsync();
 
-            throw new NotImplementedException();
-
             var filter = new ProductFilter();
 
             var Highlights = highlight?.Split(',').ToList() ?? new List<string>();
