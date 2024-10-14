@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "751rWEM7WYk=",
+  "success": true,
+  "projectFilePath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\PhloSystemAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Manjeet\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
