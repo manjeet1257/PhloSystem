@@ -1,3 +1,4 @@
+using PhloSystemAPI.Middleware;
 using PhloSystemController;
 using System.Text.Json;
 
@@ -24,6 +25,8 @@ namespace PhloSystemAPI
             builder.Services.AddControllers();
 
             var app = builder.Build();
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             // Configure the HTTP request pipeline.
 
