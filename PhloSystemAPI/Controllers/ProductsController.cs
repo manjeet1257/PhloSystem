@@ -20,12 +20,18 @@ namespace PhloSystemAPI.Controllers
         public async Task<IActionResult> FilterProducts(
             [FromQuery] decimal? minprice,
             [FromQuery] decimal? maxprice,
-            [FromQuery] string? sizes,
+            [FromQuery] string? size,
             [FromQuery] string? highlight)
         {
             var products = await _productService.GetProductsAsync();
 
-            return Ok(new { Products = products });
+            var filter = new ProductFilter();
+
+            var Highlights = highlight?.Split(',').ToList() ?? new List<string>();
+
+            var filteredProducts = _productService.FilterProducts(products, filter, minprice, maxprice, size, Highlights);
+
+            return Ok(new { Products = products, filter });
         }
 
 

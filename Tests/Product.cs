@@ -49,5 +49,32 @@ namespace Tests
                 Assert.Equal(0, count);
             }
         }
+
+        [Fact]
+        public async void GetCommonWordsCount()
+        {
+            var products = GetTestProducts();
+            var filter = new ProductFilter { };
+
+            using (var httpClient = new HttpClient())
+            {
+                var product = new ProductService(httpClient);
+                var productList = await product.GetProductsAsync();
+
+                var filterPoruducts = product.FilterProducts(productList, filter, 15, 20, "small", new List<string>());
+                Assert.NotEmpty(filter.CommonWords);
+            }
+        }
+
+        private List<Product> GetTestProducts()
+        {
+            return new List<Product>
+            {
+                new Product { Title = "Red Trouser", Price = 10, Sizes = new List<string> { "small", "medium" }, Description = "Matches green shirts." },
+                new Product { Title = "Blue Shirt", Price = 15, Sizes = new List<string> { "medium" }, Description = "Matches red hats." },
+                new Product { Title = "Green Hat", Price = 20, Sizes = new List<string> { "large" }, Description = "Matches blue shoes." }
+            };
+        }
+
     }
 }
