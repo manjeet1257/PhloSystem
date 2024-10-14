@@ -1,49 +1,53 @@
-﻿using Moq;
-using Xunit;
-using System.Collections.Generic;
-using ProductApi.Models;
-using ProductApi.Services;
-using System.Linq;
-using PhloSystemController;
+﻿using PhloSystemController;
 
 namespace Tests
 {
     public class ProductTest
     {
         [Fact]
-        public void GetProducts_Should_Return_All_Products_When_No_Filters_Applied()
+        public async void GetProducts_Should_Return_All_Products_When_No_Filters_Applied()
         {
+            using (var httpClient = new HttpClient())
+            {
+                var product = new ProductService(httpClient);
+                var productList = await product.GetProductsAsync();
 
-            var products = GetTestProducts();
-
-            // Assert
-            Assert.Equal(3, products.Count);
+                // Assert
+                Assert.Equal(48, productList.Count);
+            }
         }
 
         [Fact]
-        public void GetProducts_Should_Filter_By_MinPrice()
+        public async void GetProducts_Should_Filter_By_MinPrice()
         {
             // Arrange
-            var products = GetTestProducts();
-            decimal? minPrice = 15;
+            using (var httpClient = new HttpClient())
+            {
+                var product = new ProductService(httpClient);
+                var productList = await product.GetProductsAsync();
+                decimal minPrice = 14;
 
-            var count = products.Count(x => minPrice.HasValue && x.Price == minPrice);
+                var count = productList.Count(x => x.Price == minPrice);
 
-            // Assert
-            Assert.Equal(1, count);
+                // Assert
+                Assert.Equal(3, count);
+            }
         }
 
-        private List<Product> GetTestProducts()
+        [Fact]
+        public async void GetProducts_Should_Filter_By_MaxPrice()
         {
-            return new List<Product>
+            using (var httpClient = new HttpClient())
             {
-                new Product { Title = "Red Trouser", Price = 10, Sizes = new List<string> { "small", "medium" }, Description = "Matches green shirts." },
-                new Product { Title = "Blue Shirt", Price = 15, Sizes = new List<string> { "medium" }, Description = "Matches red hats." },
-                new Product { Title = "Green Hat", Price = 20, Sizes = new List<string> { "large" }, Description = "Matches blue shoes." }
-            };
+                var product = new ProductService(httpClient);
+                var productList = await product.GetProductsAsync();
+                decimal maxPrice = 205;
+
+                var count = productList.Count(x => x.Price == maxPrice);
+
+                // Assert
+                Assert.Equal(0, count);
+            }
         }
     }
-}
-
-}
 }

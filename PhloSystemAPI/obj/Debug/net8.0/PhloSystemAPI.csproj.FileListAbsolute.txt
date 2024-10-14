@@ -28,3 +28,4 @@ D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemAPI\obj\Debug\net8.0
 D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemAPI\obj\Debug\net8.0\PhloSystemAPI.genruntimeconfig.cache
 D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemAPI\obj\Debug\net8.0\ref\PhloSystemAPI.dll
 D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemAPI\bin\Debug\net8.0\System.Text.Json.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemAPI\obj\Debug\net8.0\PhloSystemAPI.sourcelink.json
