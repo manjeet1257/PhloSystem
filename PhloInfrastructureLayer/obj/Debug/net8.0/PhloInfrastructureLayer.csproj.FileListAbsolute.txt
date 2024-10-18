@@ -1,0 +1,13 @@
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\bin\Debug\net8.0\PhloInfrastructureLayer.deps.json
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\bin\Debug\net8.0\PhloInfrastructureLayer.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\bin\Debug\net8.0\PhloInfrastructureLayer.pdb
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.AssemblyInfoInputs.cache
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.AssemblyInfo.cs
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.csproj.CoreCompileInputs.cache
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.sourcelink.json
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\refint\PhloInfrastructureLayer.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.pdb
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\ref\PhloInfrastructureLayer.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloInfrastructureLayer\obj\Debug\net8.0\PhloInfrastructureLayer.csproj.AssemblyReference.cache

@@ -1,19 +1,20 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using PhloSystemController;
-using System.Text.RegularExpressions;
+﻿using Microsoft.AspNetCore.Mvc;
+using PhloInfrastructureLayer;
+using PhloSystemDomain;
 
-namespace PhloSystemAPI.Controllers
+namespace PhloSystemAPI
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly ProductService _productService;
+        private readonly IProductService _productService;
+        private readonly ILogger<IProductService> _logger;
 
-        public ProductsController(ProductService productService)
+        public ProductsController(IProductService productService, ILogger<IProductService> logger)
         {
             _productService = productService;
+            _logger = logger;
         }
 
         [HttpGet("filter")]
@@ -23,18 +24,33 @@ namespace PhloSystemAPI.Controllers
             [FromQuery] string? size,
             [FromQuery] string? highlight)
         {
-            var products = await _productService.GetProductsAsync();
+            // Input validation: Ensure valid prices
+            if (minprice.HasValue && minprice < 0)
+            {
+                _logger.LogError("Minimum price cannot be negative.");
+                return BadRequest("Minimum price cannot be negative.");
+            }
 
-            var filter = new ProductFilter();
+            if (maxprice.HasValue && maxprice < 0)
+            {
+                _logger.LogError("Maximum price cannot be negative.");
+                return BadRequest("Maximum price cannot be negative.");
+            }
 
-            var Highlights = highlight?.Split(',').ToList() ?? new List<string>();
+            if (minprice.HasValue && maxprice.HasValue && minprice > maxprice)
+            {
+                _logger.LogError("Minimum price cannot be greater than maximum price.");
+                return BadRequest("Minimum price cannot be greater than maximum price.");
+            }
 
-            var filteredProducts = _productService.FilterProducts(products, filter, minprice, maxprice, size, Highlights);
+            var Highlights = highlight?.Split(',')
+                                    .Where(h => !string.IsNullOrWhiteSpace(h)) // Filter out empty values
+                                    .Select(h => h.Trim())                    // Trim spaces
+                                    .ToList() ?? new List<string>();
 
-            return Ok(new { Products = products, filter });
+            var productResponse = await _productService.GetProductsAsync(minprice, maxprice, size, Highlights);
+
+            return Ok(productResponse);
         }
-
-
-
     }
 }

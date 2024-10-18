@@ -1,39 +1,37 @@
-﻿using System.Drawing;
-using System.Text.Json;
+﻿using Microsoft.Extensions.Logging;
 using System.Text.RegularExpressions;
+using PhloInfrastructureLayer;
 
-namespace PhloSystemController
+namespace PhloSystemDomain
 {
-    public class ProductService
+    public class ProductService : IProductService
+
     {
-        private readonly HttpClient _httpClient;
+        private readonly ILogger<ProductService> _logger;
+        private readonly IProductDataService _productDataService;
 
-        public ProductService(HttpClient httpClient)
+        public ProductService(ILogger<ProductService> logger, IProductDataService productDataService)
         {
-            _httpClient = httpClient;
+            _logger = logger;
+            _productDataService = productDataService;
         }
 
-        public async Task<List<Product>> GetProductsAsync()
+        public async Task<ProductResponse> GetProductsAsync(decimal? minprice, decimal? maxprice, string? size, List<string> highlight)
         {
-            var url = "https://pastebin.com/raw/JucRNpWs";
-            var response = await _httpClient.GetAsync(url);
+            var productDataList = await _productDataService.GetProductDataAsync();
+            var productList = new List<Product>();
 
-            if (response.IsSuccessStatusCode)
-            {
-                var json = await response.Content.ReadAsStringAsync();
+            //We can use automapper here as well for conversion of one data type to another.
+            foreach (var productData in productDataList)
+                productList.Add(new Product { Description = productData.Description, Price = productData.Price, Sizes = productData.Sizes, Title = productData.Title });
 
-                if (string.IsNullOrWhiteSpace(json))
-                    return new List<Product>();
+            var _productFilter = new ProductFilter();
+            var productResponse = FilterProducts(productList, _productFilter, minprice, maxprice, size, highlight);
 
-                var result = JsonSerializer.Deserialize<JsonResult>(json);
-
-                return result == null ? new List<Product>() : result.Products;
-            }
-
-            return new List<Product>();
+            return productResponse;
         }
 
-        public List<Product> FilterProducts(List<Product> products, ProductFilter filterProducts, decimal? minprice, decimal? maxprice,string? size, List<string> highlight)
+        private ProductResponse FilterProducts(List<Product> products, ProductFilter filterProducts, decimal? minprice, decimal? maxprice, string? size, List<string> highlight)
         {
             // Filtering
             if (minprice.HasValue)
@@ -61,13 +59,12 @@ namespace PhloSystemController
                 });
             }
 
-
             filterProducts.MinPrice = products.Min(p => p.Price);
             filterProducts.MaxPrice = products.Max(p => p.Price);
             filterProducts.Sizes = products.SelectMany(p => p.Sizes).Distinct().ToList();
             filterProducts.CommonWords = GetMostCommonWords(products, 10, 5);
 
-            return products;
+            return new ProductResponse { ProductFilter = filterProducts, Products = products };
         }
 
         private List<string> GetMostCommonWords(List<Product> products, int topCount, int excludeTop)

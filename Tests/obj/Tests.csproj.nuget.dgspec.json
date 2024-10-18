@@ -4,14 +4,14 @@
     "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\PhloSystemController.csproj": {
+    "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\PhloSystemAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\PhloSystemController.csproj",
-        "projectName": "PhloSystemController",
-        "projectPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\PhloSystemController.csproj",
+        "projectUniqueName": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\PhloSystemAPI.csproj",
+        "projectName": "PhloSystemAPI",
+        "projectPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\PhloSystemAPI.csproj",
         "packagesPath": "C:\\Users\\Manjeet\\.nuget\\packages\\",
-        "outputPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\obj\\",
+        "outputPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemDomain\\PhloSystemDomain.csproj": {
+                "projectPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemDomain\\PhloSystemDomain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,12 +53,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "System.Text.Json": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -67,6 +65,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -104,8 +105,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\PhloSystemController.csproj": {
-                "projectPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\PhloSystemController.csproj"
+              "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\PhloSystemAPI.csproj": {
+                "projectPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\PhloSystemAPI.csproj"
+              },
+              "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemDomain\\PhloSystemDomain.csproj": {
+                "projectPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemDomain\\PhloSystemDomain.csproj"
               }
             }
           }

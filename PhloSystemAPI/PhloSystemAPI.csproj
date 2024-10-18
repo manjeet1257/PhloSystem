@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PhloSystemController\PhloSystemController.csproj" />
+    <ProjectReference Include="..\PhloSystemController\PhloSystemDomain.csproj" />
   </ItemGroup>
 
 </Project>

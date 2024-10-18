@@ -1,0 +1,16 @@
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.csproj.AssemblyReference.cache
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.AssemblyInfoInputs.cache
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.AssemblyInfo.cs
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.csproj.CoreCompileInputs.cache
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.sourcelink.json
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\bin\Debug\net8.0\PhloSystemDomain.deps.json
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\bin\Debug\net8.0\PhloSystemDomain.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\bin\Debug\net8.0\PhloSystemDomain.pdb
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\refint\PhloSystemDomain.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSystemDomain.pdb
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\ref\PhloSystemDomain.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\bin\Debug\net8.0\PhloInfrastructureLayer.dll
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\bin\Debug\net8.0\PhloInfrastructureLayer.pdb
+D:\Manjeet\Interview\Practical\Phlo\PhloSystemAPI\PhloSystemController\obj\Debug\net8.0\PhloSyst.B254D4AC.Up2Date

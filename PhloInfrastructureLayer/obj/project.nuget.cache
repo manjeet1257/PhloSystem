@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sd1iw90K8w4=",
+  "success": true,
+  "projectFilePath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Manjeet\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Manjeet\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,15 +1,35 @@
-﻿using PhloSystemController;
+﻿using Microsoft.Extensions.Logging;
+using Moq;
+using PhloSystemAPI.Controllers;
+using PhloSystemDomain;
 
 namespace Tests
 {
     public class ProductTest
     {
+
+        private readonly ProductsController _controller;
+        private readonly Mock<IProductService> _mockProductService;
+        private readonly Mock<IProductFilter> _mockProductFilter;
+        private readonly Mock<ILogger<IProductService>> _mockLogger;
+
+        public ProductTest()
+        {
+            _mockProductService = new Mock<IProductService>();
+            _mockProductFilter = new Mock<IProductFilter>();
+            _mockLogger = new Mock<ILogger<IProductService>>();
+
+            // Initialize the controller with mock services
+            _controller = new ProductsController(_mockProductService.Object, _mockProductFilter.Object, _mockLogger.Object);
+        }
+
         [Fact]
         public async void GetProducts_Should_Return_All_Products_When_No_Filters_Applied()
         {
             using (var httpClient = new HttpClient())
             {
-                var product = new ProductService(httpClient);
+                var _logger = new ILogger<ProductService>();
+                var product = new ProductService(httpClient, _logger);
                 var productList = await product.GetProductsAsync();
 
                 // Assert
