@@ -40,7 +40,6 @@ namespace PhloSystemAPI
 
             var app = builder.Build();
 
-            app.UseHttpsRedirection();
             app.UseMiddleware<ExceptionMiddleware>();
 
             // Configure the HTTP request pipeline.

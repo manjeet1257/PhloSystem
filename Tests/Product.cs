@@ -8,7 +8,6 @@ namespace Tests
     public class ProductTest
     {
 
-        private readonly ProductsController _controller;
         private readonly Mock<IProductService> _mockProductService;
         private readonly Mock<IProductFilter> _mockProductFilter;
         private readonly Mock<ILogger<IProductService>> _mockLogger;

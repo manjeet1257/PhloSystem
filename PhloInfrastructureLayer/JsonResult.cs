@@ -10,7 +10,7 @@ namespace PhloInfrastructureLayer
     public class JsonResult
     {
         [JsonPropertyName("products")]
-        public List<Product> Products { get; set; }
+        public List<ProductData> ProductDatas { get; set; }
         [JsonPropertyName("apikeys")]
         public ApiKeys ApiKeys { get; set; }
     }

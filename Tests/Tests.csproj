@@ -18,8 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PhloSystemAPI\PhloSystemAPI.csproj" />
-    <ProjectReference Include="..\PhloSystemDomain\PhloSystemDomain.csproj" />
+    <ProjectReference Include="..\PhloSystemController\PhloSystemDomain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

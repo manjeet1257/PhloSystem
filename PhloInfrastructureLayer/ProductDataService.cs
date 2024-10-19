@@ -1,11 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace PhloInfrastructureLayer
 {
@@ -19,7 +13,7 @@ namespace PhloInfrastructureLayer
             _httpClient.Timeout = TimeSpan.FromSeconds(20); // Set timeout to avoid long-hanging requests
             _logger = logger;
         }
-        public async Task<List<Product>> GetProductDataAsync()
+        public async Task<List<ProductData>> GetProductDataAsync()
         {
             var url = "https://pastebin.com/raw/JucRNpWs";
             var response = await _httpClient.GetAsync(url);
@@ -32,7 +26,7 @@ namespace PhloInfrastructureLayer
                 if (string.IsNullOrWhiteSpace(json))
                 {
                     _logger.LogWarning("Response from API is empty or null");
-                    return new List<Product>();
+                    return new List<ProductData>();
                 }
 
                 _logger.LogInformation("Received successful response from API");
@@ -41,16 +35,16 @@ namespace PhloInfrastructureLayer
                 if (result == null)
                 {
                     _logger.LogError("Failed to deserialize API response into Product list");
-                    return new List<Product>();
+                    return new List<ProductData>();
                 }
 
                 _logger.LogInformation("Successfully deserialized API response");
-                return result.Products;
+                return result.ProductDatas;
             }
             else
                 _logger.LogError($"Failed to fetch products. Status Code: {response.StatusCode}");
 
-            return new List<Product>();
+            return new List<ProductData>();
         }
     }
 }
