@@ -57,7 +57,7 @@ GET /api/products/filter?minprice=10&maxprice=100&size=M&highlight=sale,discount
 
 ---
 
-## 5. Logging
+## 3. Logging
 
 Logging is implemented using the `ILogger` interface. Logs are captured for:
 - API requests (fetching products).
@@ -71,7 +71,7 @@ Logging is implemented using the `ILogger` interface. Logs are captured for:
 
 ---
 
-## 8. Future Improvements
+## 4. Future Improvements
 - **Caching**: Add caching to improve performance for frequently accessed data.
 - **Authentication**: Introduce authentication for API security.
 - **Pagination**: Implement pagination to handle large product datasets.
