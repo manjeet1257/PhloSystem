@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{29D26DB2-A0D1-40AE-8205-54E6C933D1CE}|Tests\\Tests.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\tests\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D26DB2-A0D1-40AE-8205-54E6C933D1CE}|Tests\\Tests.csproj|solutionrelative:tests\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\productfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\productfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +17,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{FEB01F27-462C-45E5-ABE4-AE47D081F0DA}|PhloSystemAPI\\PhloSystemAPI.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB01F27-462C-45E5-ABE4-AE47D081F0DA}|PhloSystemAPI\\PhloSystemAPI.csproj|solutionrelative:phlosystemapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\productdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|solutionrelative:phloinfrastructurelayer\\productdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\productfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\productfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\jsonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|solutionrelative:phloinfrastructurelayer\\jsonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB01F27-462C-45E5-ABE4-AE47D081F0DA}|PhloSystemAPI\\PhloSystemAPI.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{FEB01F27-462C-45E5-ABE4-AE47D081F0DA}|PhloSystemAPI\\PhloSystemAPI.csproj|solutionrelative:phlosystemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\jsonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|solutionrelative:phloinfrastructurelayer\\jsonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\iproductdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|solutionrelative:phloinfrastructurelayer\\iproductdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phlosystemcontroller\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A071F223-2ABF-4615-9F3E-3A3E42D3ABA1}|PhloSystemController\\PhloSystemDomain.csproj|solutionrelative:phlosystemcontroller\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|solutionrelative:phloinfrastructurelayer\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\productdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|solutionrelative:phloinfrastructurelayer\\productdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BD9FF77-B47A-49A2-8523-78C35BEE166E}|PhloInfrastructureLayer\\PhloInfrastructureLayer.csproj|d:\\manjeet\\interview\\practical\\phlo\\phlosystemapi\\phloinfrastructurelayer\\apikeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +70,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\Tests\\Product.cs",
+              "RelativeDocumentMoniker": "Tests\\Product.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\Tests\\Product.cs",
+              "RelativeToolTip": "Tests\\Product.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAAHUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T17:57:52.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "PhloSystemAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "PhloSystemAPI\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwCgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:50:01.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductService.cs",
+              "RelativeDocumentMoniker": "PhloSystemController\\ProductService.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductService.cs",
+              "RelativeToolTip": "PhloSystemController\\ProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:47:51.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\IProductService.cs",
+              "RelativeDocumentMoniker": "PhloSystemController\\IProductService.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\IProductService.cs",
+              "RelativeToolTip": "PhloSystemController\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:00:47.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductFilter.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductFilter.cs",
+              "RelativeDocumentMoniker": "PhloSystemController\\ProductFilter.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductFilter.cs",
+              "RelativeToolTip": "PhloSystemController\\ProductFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:11:39.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProductResponse.cs",
               "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductResponse.cs",
               "RelativeDocumentMoniker": "PhloSystemController\\ProductResponse.cs",
@@ -79,6 +148,32 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T19:17:10.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\Product.cs",
+              "RelativeDocumentMoniker": "PhloSystemController\\Product.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\Product.cs",
+              "RelativeToolTip": "PhloSystemController\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:10:50.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductDataService.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ProductDataService.cs",
+              "RelativeDocumentMoniker": "PhloInfrastructureLayer\\ProductDataService.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ProductDataService.cs",
+              "RelativeToolTip": "PhloInfrastructureLayer\\ProductDataService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAuwB8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:58:14.102Z",
               "EditorCaption": ""
             },
             {
@@ -96,33 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ApiKeys.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ApiKeys.cs",
-              "RelativeDocumentMoniker": "PhloInfrastructureLayer\\ApiKeys.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ApiKeys.cs",
-              "RelativeToolTip": "PhloInfrastructureLayer\\ApiKeys.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:56:15.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "PhloSystemAPI\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "PhloSystemAPI\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAuwCIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:50:01.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\Program.cs",
               "RelativeDocumentMoniker": "PhloSystemAPI\\Program.cs",
@@ -130,51 +199,23 @@
               "RelativeToolTip": "PhloSystemAPI\\Program.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAAACoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:28:44.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:28:44.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductFilter.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductFilter.cs",
-              "RelativeDocumentMoniker": "PhloSystemController\\ProductFilter.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductFilter.cs",
-              "RelativeToolTip": "PhloSystemController\\ProductFilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "DocumentIndex": 14,
+              "Title": "ApiKeys.cs",
+              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ApiKeys.cs",
+              "RelativeDocumentMoniker": "PhloInfrastructureLayer\\ApiKeys.cs",
+              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ApiKeys.cs",
+              "RelativeToolTip": "PhloInfrastructureLayer\\ApiKeys.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:11:39.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T18:56:15.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\IProductService.cs",
-              "RelativeDocumentMoniker": "PhloSystemController\\IProductService.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\IProductService.cs",
-              "RelativeToolTip": "PhloSystemController\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:00:47.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductService.cs",
-              "RelativeDocumentMoniker": "PhloSystemController\\ProductService.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\ProductService.cs",
-              "RelativeToolTip": "PhloSystemController\\ProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:47:51.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ProductData.cs",
               "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ProductData.cs",
               "RelativeDocumentMoniker": "PhloInfrastructureLayer\\ProductData.cs",
@@ -182,25 +223,11 @@
               "RelativeToolTip": "PhloInfrastructureLayer\\ProductData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:07:32.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T18:07:32.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductDataService.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ProductDataService.cs",
-              "RelativeDocumentMoniker": "PhloInfrastructureLayer\\ProductDataService.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\ProductDataService.cs",
-              "RelativeToolTip": "PhloInfrastructureLayer\\ProductDataService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:58:14.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PhloSystemAPI\\Properties\\launchSettings.json",
@@ -208,12 +235,11 @@
               "RelativeToolTip": "PhloSystemAPI\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-19T17:10:54.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T17:10:54.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemAPI\\appsettings.json",
               "RelativeDocumentMoniker": "PhloSystemAPI\\appsettings.json",
@@ -221,25 +247,11 @@
               "RelativeToolTip": "PhloSystemAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-19T17:10:47.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T17:10:47.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\Product.cs",
-              "RelativeDocumentMoniker": "PhloSystemController\\Product.cs",
-              "ToolTip": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloSystemController\\Product.cs",
-              "RelativeToolTip": "PhloSystemController\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:10:50.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "IProductDataService.cs",
               "DocumentMoniker": "D:\\Manjeet\\Interview\\Practical\\Phlo\\PhloSystemAPI\\PhloInfrastructureLayer\\IProductDataService.cs",
               "RelativeDocumentMoniker": "PhloInfrastructureLayer\\IProductDataService.cs",
@@ -247,8 +259,7 @@
               "RelativeToolTip": "PhloInfrastructureLayer\\IProductDataService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:58:04.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T18:58:04.591Z"
             }
           ]
         }

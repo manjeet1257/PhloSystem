@@ -24,7 +24,7 @@ namespace PhloSystemDomain
             return productResponse;
         }
 
-        private ProductResponse FilterProducts(List<ProductData> products, decimal? minprice, decimal? maxprice, string? size, List<string> highlight)
+        public ProductResponse FilterProducts(List<ProductData> products, decimal? minprice, decimal? maxprice, string? size, List<string> highlight)
         {
             //Filtering
             var minimumPrice = decimal.MaxValue; var maximumPrice = decimal.MinValue;

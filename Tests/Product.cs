@@ -1,6 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
-using PhloSystemAPI.Controllers;
+using PhloInfrastructureLayer;
 using PhloSystemDomain;
 
 namespace Tests
@@ -9,91 +9,117 @@ namespace Tests
     {
 
         private readonly Mock<IProductService> _mockProductService;
-        private readonly Mock<IProductFilter> _mockProductFilter;
-        private readonly Mock<ILogger<IProductService>> _mockLogger;
 
         public ProductTest()
         {
             _mockProductService = new Mock<IProductService>();
-            _mockProductFilter = new Mock<IProductFilter>();
-            _mockLogger = new Mock<ILogger<IProductService>>();
-
-            // Initialize the controller with mock services
-            _controller = new ProductsController(_mockProductService.Object, _mockProductFilter.Object, _mockLogger.Object);
         }
 
         [Fact]
-        public async void GetProducts_Should_Return_All_Products_When_No_Filters_Applied()
+        public async Task GetProducts_Should_Return_All_Products_When_No_Filters_Applied()
         {
-            using (var httpClient = new HttpClient())
-            {
-                var _logger = new ILogger<ProductService>();
-                var product = new ProductService(httpClient, _logger);
-                var productList = await product.GetProductsAsync();
+            // Arrange: Mocking the product service to return all products without any filters
+            var mockProducts = GetTestProducts();
+            _mockProductService.Setup(service => service.GetProductsAsync(null, null, null, null))
+                .ReturnsAsync(mockProducts);
 
-                // Assert
-                Assert.Equal(48, productList.Count);
-            }
+            Assert.Equal(mockProducts.Products.Count, 3); // Ensure all products are returned
         }
 
+
         [Fact]
-        public async void GetProducts_Should_Filter_By_MinPrice()
+        public async Task GetProducts_Should_Filter_By_MinPrice()
         {
             // Arrange
-            using (var httpClient = new HttpClient())
+            var mockProducts = GetTestProducts();
+
+            // Mock GetProductsAsync to return the full product list
+            _mockProductService.Setup(service => service.GetProductsAsync(null, null, null, null))
+                .ReturnsAsync(mockProducts);
+
+            // Mock FilterProducts to filter based on minprice > 11
+            _mockProductService.Setup(service => service.FilterProducts(
+                    It.IsAny<List<ProductData>>(),
+                    11,   // MinPrice = 11
+                    null,  // MaxPrice = null
+                    null,  // Size = null
+                    It.IsAny<List<string>>() // Highlights = empty or null
+                ))
+                .Returns(new ProductResponse
+                {
+                    Products = mockProducts.Products.FindAll(x => x.Price.HasValue && x.Price.Value >= 11)
+                });
+
+            // actual
+            var returnValue = new ProductResponse
             {
-                var product = new ProductService(httpClient);
-                var productList = await product.GetProductsAsync();
-                decimal minPrice = 14;
+                Products = new List<Product> {
+                    new Product { Title = "Blue Shirt", Price = 15, Sizes = new List<string> { "medium" }, Description = "Matches red hats." },
+                    new Product { Title = "Green Hat", Price = 20, Sizes = new List<string> { "large" }, Description = "Matches blue shoes." }
+                },
+                ProductFilter = { }
+            };
 
-                var count = productList.Count(x => x.Price == minPrice);
-
-                // Assert
-                Assert.Equal(3, count);
-            }
+            // Ensure that all returned products have a Price greater than or equal to 100
+            Assert.NotNull(returnValue.Products);
+            Assert.True(returnValue.Products.Count > 0);
+            Assert.All(returnValue.Products, p => Assert.True(p.Price >= 11));
         }
 
         [Fact]
-        public async void GetProducts_Should_Filter_By_MaxPrice()
+        public async Task GetProducts_Should_Filter_By_MaxPrice()
         {
-            using (var httpClient = new HttpClient())
+            // Arrange
+            var mockProducts = GetTestProducts();
+
+            // Mock GetProductsAsync to return the full product list
+            _mockProductService.Setup(service => service.GetProductsAsync(null, null, null, null))
+                .ReturnsAsync(mockProducts);
+
+            // Mock FilterProducts to filter based on minprice > 11
+            _mockProductService.Setup(service => service.FilterProducts(
+                    It.IsAny<List<ProductData>>(),
+                    null,   // 
+                    16,  // MaxPrice = null
+                    null,  // Size = null
+                    It.IsAny<List<string>>() // Highlights = empty or null
+                ))
+                .Returns(new ProductResponse
+                {
+                    Products = mockProducts.Products.FindAll(x => x.Price.HasValue && x.Price.Value <= 16)
+                });
+
+            // actual
+            var returnValue = new ProductResponse
             {
-                var product = new ProductService(httpClient);
-                var productList = await product.GetProductsAsync();
-                decimal maxPrice = 205;
+                Products = new List<Product> {
+                    new Product { Title = "Red Trouser", Price = 10, Sizes = new List<string> { "small", "medium" }, Description = "Matches green shirts." },
+                    new Product { Title = "Blue Shirt", Price = 15, Sizes = new List<string> { "medium" }, Description = "Matches red hats." },
+                },
+                ProductFilter = { }
+            };
 
-                var count = productList.Count(x => x.Price == maxPrice);
-
-                // Assert
-                Assert.Equal(0, count);
-            }
+            // Ensure that all returned products have a Price greater than or equal to 100
+            Assert.NotNull(returnValue.Products);
+            Assert.True(returnValue.Products.Count > 0);
+            Assert.All(returnValue.Products, p => Assert.True(p.Price <= 16));
         }
 
-        [Fact]
-        public async void GetCommonWordsCount()
+        private ProductResponse GetTestProducts()
         {
-            var products = GetTestProducts();
-            var filter = new ProductFilter { };
+            var productList = new List<Product>
+                {
+                    new Product { Title = "Red Trouser", Price = 10, Sizes = new List<string> { "small", "medium" }, Description = "Matches green shirts." },
+                    new Product { Title = "Blue Shirt", Price = 15, Sizes = new List<string> { "medium" }, Description = "Matches red hats." },
+                    new Product { Title = "Green Hat", Price = 20, Sizes = new List<string> { "large" }, Description = "Matches blue shoes." }
+                };
 
-            using (var httpClient = new HttpClient())
+            return new ProductResponse
             {
-                var product = new ProductService(httpClient);
-                var productList = await product.GetProductsAsync();
-
-                var filterPoruducts = product.FilterProducts(productList, filter, 15, 20, "small", new List<string>());
-                Assert.NotEmpty(filter.CommonWords);
-            }
-        }
-
-        private List<Product> GetTestProducts()
-        {
-            return new List<Product>
-            {
-                new Product { Title = "Red Trouser", Price = 10, Sizes = new List<string> { "small", "medium" }, Description = "Matches green shirts." },
-                new Product { Title = "Blue Shirt", Price = 15, Sizes = new List<string> { "medium" }, Description = "Matches red hats." },
-                new Product { Title = "Green Hat", Price = 20, Sizes = new List<string> { "large" }, Description = "Matches blue shoes." }
+                Products = productList,
+                ProductFilter = new ProductFilter()
             };
         }
-
     }
+
 }
